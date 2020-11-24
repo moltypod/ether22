@@ -303,33 +303,24 @@ const DepositContractPage = ({ data, location }) => {
       />
       <LeftColumn>
         <Breadcrumbs slug={location.pathname} startDepth={1} />
-        <Title>Check the deposit contract address</Title>
+        <Title>Get the deposit contract address</Title>
         <Subtitle>
-          This is the address for the Eth2 staking contract. Use this page to
-          confirm you’re sending funds to the correct address when you stake.
+          This is the address for the Eth2 staking contract. Use this page to confirm you’re sending funds to the correct address when you stake..
         </Subtitle>
-        <h2>This is not where you stake</h2>
+        <h2>This is where you place your stake</h2>
         <p>
-          To stake your ETH in Eth2 you must use the dedicated launchpad product
-          and follow the instructions. Sending ETH to the address on this page
-          will not make you a staker and will result in a failed transaction.{" "}
+          To put your ETH in Eth2, you must use a special address to launch and follow the instructions. Sending ETH to the address on this page will make you a Staker.{" "}
           <Link to="/en/eth2/staking/">More on staking</Link>
         </p>
         <StyledButton to="https://launchpad.ethereum.org">
           Stake using launchpad
         </StyledButton>
-        <h2>Check these sources</h2>
-        <p>
-          We expect there to be a lot of fake addresses and scams out there. To
-          be safe, check the Eth2 staking address you're using against the
-          address on this page. We recommend checking it with other trustworthy
-          sources too.
-        </p>
-        <CardList content={addressSources} />
+       
+   
       </LeftColumn>
       <RightColumn>
         <AddressCard>
-          <CardTag>Check deposit contract address</CardTag>
+          <CardTag>Get deposit contract address</CardTag>
           <CardContainer>
             {!state.showAddress && (
               <>
@@ -346,7 +337,7 @@ const DepositContractPage = ({ data, location }) => {
                     })
                   }
                 >
-                  I’ve already used the launchpad to set up my Eth2 validator.
+                  I read about the responsibility of the validator
                 </StyledCheckbox>
                 <StyledCheckbox
                   size={1.5}
@@ -358,8 +349,7 @@ const DepositContractPage = ({ data, location }) => {
                     })
                   }
                 >
-                  I understand that I need to use the launchpad to stake. Simple
-                  transfers to this address won’t work.
+                  I read about the responsibilities of a validator
                 </StyledCheckbox>
                 <StyledCheckbox
                   size={1.5}
@@ -371,7 +361,7 @@ const DepositContractPage = ({ data, location }) => {
                     })
                   }
                 >
-                  I'm going to check the deposit contract address with other
+                  I will be responsible for the responsibilities assigned to me by the Ethereum network
                   sources.
                 </StyledCheckbox>
                 <CopyButton
@@ -423,19 +413,14 @@ const DepositContractPage = ({ data, location }) => {
                       </CopyButton>
                     )}
                   </CopyToClipboard>
-                  <Link
-                    to={`https://etherscan.io/address/${DEPOSIT_CONTRACT_ADDRESS}`}
-                  >
-                    View contract on Etherscan
-                  </Link>
+                  
                 </ButtonRow>
               </>
             )}
             <StyledWarning emoji=":warning:">
               <div>
-                Sending funds to this address won’t work and won’t make you a
-                staker. Follow the instructions in{" "}
-                <Link to="https://launchpad.ethereum.org">the launchpad</Link>.
+                Sending funds to this address make you a
+                staker. 
               </div>
             </StyledWarning>
           </CardContainer>
