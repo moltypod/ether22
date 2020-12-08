@@ -207,6 +207,18 @@ Ethereum, geliştiricilere uygulamalarının yapım, test ve dağıtım aşamala
 
 ## Backend APIs {#backend-apis}
 
+**Rivet -** **_Ethereum and Ethereum Classic APIs as a service powered by open source software._**
+
+- [rivet.cloud](https://rivet.cloud)
+- [Documentation](https://rivet.cloud/docs/)
+- [GitHub](https://github.com/openrelayxyz/ethercattle-deployment)
+
+**Alchemy -** **_Ethereum API and developer tools._**
+
+- [alchemyapi.io](https://alchemyapi.io)
+- [Documentation](https://docs.alchemyapi.io/)
+- [GitHub](https://github.com/alchemyplatform)
+
 **Infura -** **_The Ethereum API as a service._**
 
 - [infura.io](https://infura.io)
